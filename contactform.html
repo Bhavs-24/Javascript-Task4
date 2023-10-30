@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactform.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>HealthOnUs</h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a>HOME</a></li>
+                <li><a>SERVICES</a></li>
+                <li><a href="index.html">CAREERS</a></li>
+                <li><a class="active">CONTACT</a></li>
+                <li class="logo"><a><img src="assets/blog-icon.png"></a></li>
+            </ul>
+        </div>
+        <div>
+            <form id="contact_form">
+                <div class="form_fields"> 
+                    <h2>Contact Form</h2>
+                    <div class="field1">
+                        <label class="form_labels">My Name: </label>
+                        <input class="form_inputs" type="text" id="name" name="fullname" required><span class="required">*</span>
+                    </div>
+                    <div class="field1">
+                        <label class="form_labels">My Email Address:</label>
+                        <input class="email_input" type="email" id="email" name="emailaddress" required><span class="required">*</span><span  class="validationmsg" id="validationMessage"></span>
+                    </div>
+                    <div class="field1">
+                        <label class="form_labels">My Telephone Number:</label>
+                        <input class="tele_input" type="number" id="telephone" name="telephone"  pattern="[6789][0-9]{9}" title="Please enter valid phone number" maxlength="10">
+                    </div>
+                    <div class="field1">
+                        <label class="form_labels">My Organization Name:</label>
+                        <input class="tele_input" type="text" id="organizationname" name="organizationname" required><span class="required">*</span>
+                    </div>
+                    <div class="field1">
+                        <label class="form_labels">My City:</label>
+                        <input  class="city_input" type="text" id="city" name="city" >
+                    </div>
+                    <div class="gender_options">
+                        <div>
+                            <label  class="form_labels">Gender:</label>
+                        </div>
+                        <div class="gender_opts">
+                            <input type="radio" id="radiogender1" name="gender" value="Sir" onchange="radiofunc(this)">
+                            <label for="radiogender1">Male</label><br>
+                            <input type="radio" id="radiogender2" name="contactthrough"  value="Lady" onchange="radiofunc(this)" >
+                            <label for="radiogender2">Female</label><br>
+                        </div>
+                    </div>
+                
+                    <div class="field1">
+                        <label class="form_labels">My State or Province:</label>
+                        <select class="state_opts" id="statedropdowns">
+                            <option >Select State or Province</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Andhrapradesh">Andhrapradesh</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Madhyapradesh">Madhyapradesh</option>
+                        </select>
+                    </div>
+                    <div class="contact_options">
+                        <div>
+                            <label  class="form_label">Please Contact Me By:</label>
+                        </div>
+                        <div class="communcation_radiobtn">
+                            <input type="radio" id="radio1" name="contactthrough" value="Email"> 
+                            <label for="radio1">Email</label><br>
+                            <input type="radio" id="radio2" name="contactthrough" value="Phone">
+                            <label for="radio2">Phone</label><br>
+                            <input type="radio" id="radio3" name="contactthrough" value="Both">
+                            <label for="radio3">Both</label><br>
+                        </div>
+                    </div>
+                    <div  class="field1">
+                        <label class="form_labels">Promotional Code:</label>
+                        <input class="promo_field" type="text" id="promocode" readonly>
+                    </div>
+                    <div>
+                        <h4 class="form_labels">Optional Information</h4>
+                        <p class="description-txt">This information is optional but it helps us to serve you better.</p>
+                    </div>
+                    <div class="field1">
+                        <label class="form_labels">My Website Address is:</label>
+                        <input  class="website_input" type="text" id="webaddress" name="webaddress"> 
+                    </div>
+                    <div>
+                        <div>
+                            <label class="form_labels">Tell Us More About Your Organization:</label>
+                        </div>
+                        <textarea cols="40"></textarea>
+                    </div>
+                    <div>
+                        <div>
+                            <label class="form_labels">What I'd really like to know is:</label>
+                        </div>
+                        <textarea cols="40"></textarea>
+                    </div>
+                    <div>
+                        <button class="btn_snd" onclick="validateForm()">Send Message</button>
+                        <button class="btn_snd" onclick="clearForm()">Clear Form</button>
+                    </div>
+                  
+                </div>
+                
+               
+            </form>
+        </div>
+    </div>
+    <script src="contactform.js"></script>
+</body>
+</html>
