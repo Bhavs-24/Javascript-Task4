@@ -35,7 +35,8 @@ ul li{
     letter-spacing: 1px;
 }
 .navbar ul li:last-child{
-    float: right;
+    position: absolute;
+    right: 0%;
 }
 ul li a{
     padding-top: 10px;
