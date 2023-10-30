@@ -28,7 +28,6 @@ ul{
     display: inline-flex;
     list-style: none;
     padding-left: 24px;
-    /* width: 100%; */
 }
 ul li{
     font-size: 17px;
@@ -76,7 +75,6 @@ li a:hover{
 }
 .form_inputs{
     margin-left: 111px;
-    /* margin-bottom: 10px; */
     padding-top: 5px;
     padding-bottom: 5px;
     border: 1px solid black;
