@@ -22,6 +22,7 @@ else{
 }
 }
 
+//validation for mobile number
 function phonecheck(){
     debugger
     var mobilenumber = document.getElementById('telephone');
@@ -38,7 +39,6 @@ function phonecheck(){
         message.innerHTML = " "
     }
 }
-
 
 //radio button alert message
 function radiofunc(radio){
