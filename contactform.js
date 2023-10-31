@@ -18,8 +18,9 @@ if(nameValue.trim() === "" || emailValue.trim ==="" || orgvale.trim ===""){
 }
 else{
     document.getElementById("errorMessage").innerHTML = "";
-    alert('Succesfully Submitted!')
+   
 }
+alert('Succesfully Submitted!')
 }
 
 //validation for mobile number
