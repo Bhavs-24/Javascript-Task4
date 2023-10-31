@@ -1,13 +1,8 @@
 function validateForm(){
 const emailInput = document.getElementById('email');
-const validationMessage = document.getElementById('validationMessage');
-const emailpattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-if(emailpattern.test(emailInput.value)){
-    validationMessage.textContent = "";
-}else{
-    validationMessage.textContent = "Invalid email address";
-}
+
+
 
 var nameValue = document.getElementById("name").value;
 var emailValue = document.getElementById("email").value;
@@ -18,9 +13,10 @@ if(nameValue.trim() === "" || emailValue.trim ==="" || orgvale.trim ===""){
 }
 else{
     document.getElementById("errorMessage").innerHTML = "";
+    alert('Succesfully Submitted!');
    
 }
-alert('Succesfully Submitted!')
+// 
 }
 
 //validation for mobile number
@@ -34,10 +30,12 @@ function phonecheck(){
 
     if(mobilenumber.value.length>10 || mobilenumber.value.length<10){
         message.style.color = badcolor;
-        message.innerHTML = "must be 10 digits"
+        message.innerHTML = "must be 10 digits";
+        return false;
     }
     else{
-        message.innerHTML = " "
+        message.innerHTML = " ";
+        return true;
     }
 }
 
@@ -65,32 +63,50 @@ dropdown.addEventListener("change",function(){
 function namechange(){
     var nameValue = document.getElementById("name").value;
     if(nameValue.length==0){
-        document.getElementById('nameerror').innerHTML = "Please enter name"
+        document.getElementById('nameerror').innerHTML = "Please enter name";
+        return false;
+    }
+    else{
+        return true;
     }
 } 
+
 function emailchange(){
+   
     var emailValue = document.getElementById("email").value;
     if(emailValue.length==0){
-        document.getElementById('emailerror').innerHTML = "Please enter email"
+        document.getElementById('emailerror').innerHTML = "Please enter email";
     }
 }
+
 function orgchange(){
     var orgvale = document.getElementById("organizationname").value;
     if(orgvale.length==0){
-        document.getElementById('orgerror').innerHTML = "Please enter organization name"
+        document.getElementById('orgerror').innerHTML = "Please enter organization name";
+        return false;
+    }
+    else{
+        return true;
     }
 }
 function fieldfocus(){
     var nameValue = document.getElementById("name").value;
     var emailValue = document.getElementById("email").value;
     var orgvale = document.getElementById("organizationname").value;
+    const emailpattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     if(nameValue.length!=0){
-        document.getElementById('nameerror').innerHTML = ""
+        document.getElementById('nameerror').innerHTML = "";
     }
     if(emailValue.length!=0){
-        document.getElementById('emailerror').innerHTML = ""
+        document.getElementById('emailerror').innerHTML = "";
     }
     if(orgvale.length!=0){
         document.getElementById('orgerror').innerHTML = "";
+    }
+    if(!emailpattern.test(emailValue)){
+        document.getElementById('validationMessage').innerHTML = "Please enter valid email";
+    }
+    else{
+        document.getElementById('validationMessage').innerHTML = "";
     }
 }
