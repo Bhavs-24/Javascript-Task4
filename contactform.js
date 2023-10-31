@@ -4,7 +4,7 @@ const validationMessage = document.getElementById('validationMessage');
 const emailpattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
 if(emailpattern.test(emailInput.value)){
-    validationMessage.textContent = "valid email address";
+    validationMessage.textContent = "";
 }else{
     validationMessage.textContent = "Invalid email address";
 }
