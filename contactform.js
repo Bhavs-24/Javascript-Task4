@@ -9,9 +9,6 @@ if(emailpattern.test(emailInput.value)){
     validationMessage.textContent = "Invalid email address";
 }
 
-// document.getElementById("contact_form").addEventListener("submit",function(){
-    // event.preventDefault();
-
 var nameValue = document.getElementById("name").value;
 var emailValue = document.getElementById("email").value;
 var orgvale = document.getElementById("organizationname").value;
@@ -22,7 +19,7 @@ if(nameValue.trim() === "" || emailValue.trim ==="" || orgvale.trim ===""){
 else{
     document.getElementById("errorMessage").innerHTML = "";
 }
-//});
+
 }
 function radiofunc(radio){
     if(radio.checked){
