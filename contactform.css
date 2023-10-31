@@ -79,8 +79,18 @@ li a:hover{
     font-weight: bold;
     font-family: calibri light;
 }
+.form_label_name{
+    padding-right: 5em;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    /* padding: 10px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: calibri light;
+}
 .form_inputs{
-    margin-left: 111px;
+    margin-left: 42px;
     padding-top: 5px;
     padding-bottom: 5px;
     border-left: 2px solid black;
