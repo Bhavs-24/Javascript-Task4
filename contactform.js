@@ -1,9 +1,5 @@
 function validateForm(){
 const emailInput = document.getElementById('email');
-
-
-
-
 var nameValue = document.getElementById("name").value;
 var emailValue = document.getElementById("email").value;
 var orgvale = document.getElementById("organizationname").value;
@@ -13,10 +9,8 @@ if(nameValue.trim() === "" || emailValue.trim ==="" || orgvale.trim ===""){
 }
 else{
     document.getElementById("errorMessage").innerHTML = "";
-    alert('Succesfully Submitted!');
-   
+    alert('Succesfully Submitted!');  
 }
-// 
 }
 
 //validation for mobile number
