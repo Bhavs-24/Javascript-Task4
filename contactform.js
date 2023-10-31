@@ -20,18 +20,21 @@ else{
     document.getElementById("errorMessage").innerHTML = "";
     alert('Succesfully Submitted!')
 }
-
-
 }
+
+//radio button alert message
 function radiofunc(radio){
     if(radio.checked){
         alert("Hello" +radio.value);
     }
 }
+
+//to clear form 
 function clearForm(){
     document.getElementById('contact_form').reset();
 }
 
+//when dropdown value is selected  input value will append
 var dropdown = document.getElementById('statedropdowns');
 var promoinputfield = document.getElementById('promocode');
 dropdown.addEventListener("change",function(){
@@ -58,7 +61,7 @@ function orgchange(){
         document.getElementById('orgerror').innerHTML = "Please enter organization name"
     }
 }
-function namefocus(){
+function fieldfocus(){
     var nameValue = document.getElementById("name").value;
     var emailValue = document.getElementById("email").value;
     var orgvale = document.getElementById("organizationname").value;
