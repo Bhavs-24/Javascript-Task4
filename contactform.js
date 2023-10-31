@@ -18,12 +18,13 @@ if(nameValue.trim() === "" || emailValue.trim ==="" || orgvale.trim ===""){
 }
 else{
     document.getElementById("errorMessage").innerHTML = "";
+    alert('Succesfully Submitted!')
 }
+
 
 }
 function radiofunc(radio){
     if(radio.checked){
-        console.log("hi",radio.value)
         alert("Hello" +radio.value);
     }
 }
