@@ -22,6 +22,24 @@ else{
 }
 }
 
+function phonecheck(){
+    debugger
+    var mobilenumber = document.getElementById('telephone');
+    var message = document.getElementById('message');
+
+    var goodcolor = "#0C6";
+    var badcolor = "red";
+
+    if(mobilenumber.value.length>10 || mobilenumber.value.length<10){
+        message.style.color = badcolor;
+        message.innerHTML = "must be 10 digits"
+    }
+    else{
+        message.innerHTML = " "
+    }
+}
+
+
 //radio button alert message
 function radiofunc(radio){
     if(radio.checked){

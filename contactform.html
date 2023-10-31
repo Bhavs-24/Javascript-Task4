@@ -36,7 +36,7 @@
                     </div>
                     <div class="field1">
                         <label class="form_labels">My Telephone Number:</label>
-                        <input class="tele_input" type="number" id="telephone" name="telephone"  pattern="[6789][0-9]{9}" title="Please enter valid phone number" maxlength="10">
+                        <input class="tele_input" type="number" id="telephone" name="telephone" onkeyup="phonecheck(); return false;" ><span id="message"></span>
                     </div>
                     <div class="field1">
                         <label class="form_labels">My Organization Name:</label>
@@ -91,7 +91,7 @@
                     </div>
                     <div class="field1">
                         <label class="form_labels">My Website Address is:</label>
-                        <input  class="website_input" type="text" id="webaddress" name="webaddress"> 
+                        <input  class="website_input" type="url" id="webaddress" name="webaddress"> 
                     </div>
                     <div>
                         <div>
