@@ -8,7 +8,7 @@
     };
     fileupload.onchange = function(){
     var filename = fileupload.value.split('\\')[fileupload.value.split('\\').length - 1];
-    filepath.innerHTML = "<b>Uploaded Resume </b>" + filename;
+    filepath.value =  filename;
     };
 };
 

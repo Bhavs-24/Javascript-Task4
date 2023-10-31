@@ -119,13 +119,13 @@ li a:hover{
 }
 .btn_browse{
     font-weight: bold;
-    padding-top: 3px;
-    margin-left: 101px;
-    padding-bottom: 3px;
-    padding-right: 16px;
+    margin-top: 10px; 
+    padding-right: 20px;
     border: 2px solid #a6aaaf;
     font-family: calibri light;
     font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 .container{
     width: 100%;
@@ -135,8 +135,18 @@ li a:hover{
     background-color: black;
 }
 .spn_filepath{
-    padding-left: 10px;
-    padding-right: 5px;
-    font-family: calibri light;
-    font-weight: bold;
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border: 2px solid #a6aaaf;
+}
+.input_filepath{
+    border: 1px solid red;
+}
+.file_upload_fields{
+    display: flex;
+}
+.inputfield_1{
+    display: flex;
 }
