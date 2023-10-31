@@ -130,7 +130,10 @@ li a:hover{
     padding-bottom: 5px;
     padding-left: 5px;
     padding-bottom: 5px;
-    border: 1px solid black;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid #DFDCD6;
+    border-right: 2px solid #DFDCD6;
 }
 .promo_field{
     margin-left: 54px;
@@ -202,8 +205,11 @@ textarea{
 }
 .error_validation{
     color: red;
+    font-weight: 600;
+    font-family: calibri light;
     margin-bottom: 20px;
 }
 .error_fields{
     color: red;
+    font-family: calibri light;
 }
