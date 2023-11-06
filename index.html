@@ -43,11 +43,25 @@
             </div> 
             <div class="file_upload_fields">
                 <input type="file" id="file_upload" class="file_upload" />
-                <label  class="form_labels_uploadfile">Uploaded Resume</label>
-                <input id="file_path" type="text" class="spn_filepath"></input>
-                <input  class="btn_browse" type="button" id="btn_fileupload" value="Browse..."/>
+                <div>
+                    <label  class="form_labels_uploadfile">Uploaded Resume</label>
+                </div>
+               <div>
+                    <div>
+                        <input id="file_path" type="text" class="spn_filepath"></input>
+                    </div>
+                    <div>
+
+                        <button type="submit" class="submitbtn" onclick="onSubmit()"><b>Submit</b></button>
+                    </div>
+               </div>
+               <div>
+                    <input  class="btn_browse" type="button" id="btn_fileupload" value="Browse..."/>
+               </div>
+               
+   
             </div>
-                <button type="submit" class="submitbtn" onclick="onSubmit()"><b>Submit</b></button>
+               
             
         </form>
 

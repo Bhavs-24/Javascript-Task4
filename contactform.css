@@ -25,7 +25,7 @@ body{
 }
 ul{
     margin: 0px;
-    /* padding: 8px; */
+    padding: 8px;
     background-color: black;
     display: inline-flex;
     list-style: none;
@@ -33,7 +33,7 @@ ul{
 }
 ul li{
     font-size: 17px;
-    padding: 8px;
+    /* padding: 8px; */
     font-weight: bold;
     color: white;
     font-family: monospace;
@@ -45,6 +45,8 @@ ul li{
 }
 ul li a{
     color: white;
+    margin-left: 8px;
+    margin-right: 8px;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 5px;
@@ -58,6 +60,7 @@ li a:hover{
 .logo{
     padding-top: 6px;
     padding-bottom: 0px;
+    bottom: 145px;
 }
 .form_fields{
     margin-left: 24px;
